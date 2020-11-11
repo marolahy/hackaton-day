@@ -1,0 +1,6 @@
+auth-server/node_modules
+auth-server/.idea/
+auth-server/.vscode/
+auth-server/build/
+auth-server/tmp/
+auth-server/temp/
