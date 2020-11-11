@@ -1,10 +1,9 @@
-FROM mhart/alpine-node:latest
+FROM node:latest
 
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY package.json /app
-COPY .env /app
-
-RUN node -v
+COPY package.json /usr/src/app/package.json
 RUN npm install
+
+COPY . /usr/src/app
